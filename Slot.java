@@ -5,18 +5,28 @@ public class Slot extends Game {
     private int cost = 3;
     private Random random = new Random();
 
-    public void play() {
+    public void start() {
         System.out.println(BLUE + "Ready to crank that machine? Each spin at our signature slot machine - THE DEBT CREATOR - will cost you three tickets, and you will have the chance to win big tickets at Payout Palace." + RESET);
         System.out.println("Press 's' to crank the machine!");
         String output = scanner.nextLine().trim();
-        if (output.equals("s")) {
-            if (ticketCount >= cost) {
-                    ticketCount -= cost;
+        while (true) {
+            if (output.equals("s")) {
+                if (ticketCount >= cost) {
+                        ticketCount -= cost;
+                        break;
                 } else {
-                    System.out.println(RED + "Not enough tickets to spin." + RESET);
-                    return;
+                        System.out.println(RED + "Not enough tickets to spin." + RESET);
+                        return;
                 }
+            }
+            if(!output.equals("s)) {
+                System.out.println(RED + "Invalid input. Try again." + RESET);
+                output = scanner.nextLine().trim();
+            }
         }
+    }
+    
+    public void play() {
         double result = random.nextDouble();
 
         if (result < 0.02) {
