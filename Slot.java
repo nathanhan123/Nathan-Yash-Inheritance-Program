@@ -43,13 +43,13 @@ public class Slot extends Game {
         }
 
         System.out.println("Tickets: " + ticketCount);
-        System.out.println(BLUE + "Press 'r' to spin again or 'q' to quit." + RESET);
+        System.out.println(BLUE + "Press 's' to spin again or 'q' to quit." + RESET);
 
         while (true) {
             String choice = scanner.nextLine().trim();
             if (choice.equals("q")) {
                 break;
-            } else if (choice.equals("r")) {
+            } else if (choice.equals("s")) {
                 if (ticketCount >= cost) {
                     ticketCount -= cost;
                     play();
