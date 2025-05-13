@@ -6,7 +6,7 @@ public class Slot extends Game {
     private Random random = new Random();
 
     public void start() {
-        System.out.println(BLUE + "Ready to crank that machine? Each spin at our signature slot machine - THE DEBT CREATOR - will cost you three tickets, and you will have the chance to win big tickets at Payout Palace." + RESET);
+        System.out.println(BLUE + "Ready to crank that machine? Each spin at our signature slot machine - THE DEBT CREATOR - will cost you" + "\n" + "three tickets, and you will have the chance to win big tickets at Payout Palace." + RESET);
         System.out.println("Press 's' to crank the machine!");
         String output = scanner.nextLine().trim();
         while (true) {
