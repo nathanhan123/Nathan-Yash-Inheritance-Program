@@ -54,6 +54,7 @@ public class Game {
                     ticketCount -= 3;
                     System.out.println("Spinning Slot Machine!");
                     Slot slot = new Slot();
+                    slot.start();
                     slot.play();
                 } else {
                     System.out.println("Not enough tickets for Slot Machine.");
