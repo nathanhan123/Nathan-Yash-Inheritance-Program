@@ -7,7 +7,7 @@ public class Basketball extends Game {
     private int shots = 0;
 
     public void play() {
-        System.out.println(BLUE + "Ready to get your inner LEBRON JAMES on?" + RESET);
+        System.out.println(BLUE + "Ready to get your inner LEBRON JAMES on? In this game you will have as many shots as you wish to reach our target score of 21. Then you will be rewarded TICKETS depending on how many shots it took you to reach our target." + RESET);
 
         while (score < 21) {
             takeShot();
@@ -36,6 +36,7 @@ public class Basketball extends Game {
             move = Integer.parseInt(scanner.nextLine().trim());
             if (move >2) {
                 System.out.println(RED + "Invalid input. Try again." + RESET);
+                return;
             }
         } catch (NumberFormatException e) {
             System.out.println(RED + "Invalid input. Try again." + RESET);
