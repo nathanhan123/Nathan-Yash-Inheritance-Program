@@ -7,11 +7,11 @@ public class Skeeball extends Game {
     private Random random = new Random();
 
     public void play() {
-        System.out.println(BLUE + "Hey there Skee - buddy! In this game, you will be given 5 shots to shoot a ball into a selected hole of your choice: the 10 point hole, the 15 point hole, and the 25 point hole." + "\n" +  "For each shot, you will be asked to input the number for the corresponding hole you wish to throw at. At the end of the game, your total points will be calculated by adding up the scores of all of the" + "\n" + "holes you made your ball into. The amount of tickets you get will be determined by your total amount of points at the end of the game." + RESET);
+        System.out.println(BLUE + "Hey there Skee - buddy! In this game, you will be given 5 shots to shoot a ball into a selected hole of" + "\n" + "your choice: the 10 point hole, the 15 point hole, and the 25 point hole." + "\n" +  "For each shot, you will be asked to input the number for the corresponding hole you wish to throw at." + "\n" + "At the end of the game, your total points will be calculated by adding up the scores of all of the" + "\n" + "holes you made your ball into. The amount of tickets you get will be determined by your total amount of" + "\n" + "points at the end of the game." + RESET);
 
         while (tosses > 0) {
             System.out.println("Toss #" + (6 - tosses));
-            System.out.println("Choose a hole (1: 10 points, 2: 15 points, 3: 25 points):");
+            System.out.println("Choose a hole: [1]: 10 points, [2]: 15 points, [3]: 25 points: ");
 
             int choice = -1;
             try {
