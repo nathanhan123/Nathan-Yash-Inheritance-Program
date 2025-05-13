@@ -15,9 +15,9 @@ public class Basketball extends Game {
 
         System.out.println("You scored 21 points in " + shots + " shots!");
         int reward;
-        if (shots > 16) {
+        if (shots > 15) {
             reward = 3;
-        } else if (shots > 8) {
+        } else if (shots > 9) {
             reward = 8;
         } else {
             reward = 15;
