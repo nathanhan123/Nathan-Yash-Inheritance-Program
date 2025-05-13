@@ -19,7 +19,7 @@ public class Slot extends Game {
                         return;
                 }
             }
-            if(!output.equals("s)) {
+            if(!output.equals("s")) {
                 System.out.println(RED + "Invalid input. Try again." + RESET);
                 output = scanner.nextLine().trim();
             }
