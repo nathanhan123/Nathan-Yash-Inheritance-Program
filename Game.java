@@ -20,7 +20,7 @@ public class Game {
     }
 
     public void start() {
-        System.out.println(BLUE + "Welcome to the Payout Palace Arcade! My name is DBG, and I will be your guide throughout your Arcade fun. My caretaker Nathan has kindly gifted you 100 TICKETS to enjoy yourself on this fine day! Where would you like to start?" + RESET);
+        System.out.println(BLUE + "Welcome to the Payout Palace Arcade! My name is DBG, and I will be your guide throughout your Arcade fun." + "\n" + "My caretaker Nathan has kindly gifted you 100 TICKETS to enjoy yourself on this fine day!" + "\n" + "Where would you like to start?" + RESET);
     }
 
     public void play() {
